@@ -65,7 +65,7 @@ describe("Temperature Conversion Functionality", function() {
   })
 
   it("should check if output is a number", function() {
-    assert(typeof myApp.convertTempFtoC(23) === "number");
+    assert(typeof myApp.convrtTempFtoC(23) === "number");
   })
   
 
