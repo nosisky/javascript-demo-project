@@ -55,7 +55,7 @@ describe("Temperature Conversion Functionality", function() {
     assert(myApp.convertTempCtoF(-60) == false);
   })
   it("should return Y for Fahrenheit value X", function() {
-    assert(myApp.convertTempFtoC(140) == 60);
+    assert(myApp.convertTempFtC(140) == 60);
   })
   it("should validate if there is an input", function() {
     assert(myApp.convertTempFtoC() == false);
