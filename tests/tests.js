@@ -4,7 +4,7 @@
 
 var chai = require('chai');
 var assert = chai.assert;
-
+var expect = chai.expect;
 var myApp = require('../app/library.js');
 
 describe("Arithmetic Functionality", function() {
@@ -62,6 +62,10 @@ describe("Temperature Conversion Functionality", function() {
   })
   it("should return Y for Fahrenheit value X", function() {
     assert(myApp.convertTempFtoC(104) == 40);
+  })
+  it("should return Y for Fahrenheit value X", function() {
+    expect(myApp.convertTempFtoC(140)).to.be.a("number");
+
   })
 
   it("should check if output is a number", function() {
